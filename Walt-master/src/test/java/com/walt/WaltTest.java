@@ -238,7 +238,7 @@ public class WaltTest {
 
         MatcherAssert.assertThat(waltService.getDriverRankReport(), isInDescendingOrdering());
         MatcherAssert.assertThat(waltService.getDriverRankReportByCity(cityRepository.findByName("Jerusalem")), isInDescendingOrdering());
-        MatcherAssert.assertThat(waltService.getDriverRankReportByCity(cityRepository.findByName("tlv")), isInDescendingOrdering());
+        MatcherAssert.assertThat(waltService.getDriverRankReportByCity(cityRepository.findByName("Tel-Aviv")), isInDescendingOrdering());
     }
 
     private Matcher<? super List<DriverDistance>> isInDescendingOrdering()
